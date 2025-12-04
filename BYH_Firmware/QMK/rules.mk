@@ -1,0 +1,8 @@
+MCU = RP2040
+BOOTLOADER = rp2040
+
+
+ENCODER_ENABLE = yes       
+OLED_ENABLE = yes         
+OLED_DRIVER = SSD1306     
+LTO_ENABLE = yes
