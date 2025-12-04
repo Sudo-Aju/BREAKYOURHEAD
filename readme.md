@@ -8,12 +8,6 @@
 
   <br><br>
 
-  <a href="#bom">
-    <img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" alt="Status">
-  </a>
-</div>
-
-<hr>
 
 ## 🛠️ Bill of Materials (BOM)
 
