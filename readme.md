@@ -4,10 +4,12 @@
     <strong>A custom 6-key macro pad with dual rotary encoders and OLED support.</strong>
   </p>
   
-  <img src="https://via.placeholder.com/600x300?text=BREAKYOURHEAD+Pad" alt="BREAKYOURHEAD Pad Prototype" width="600">
+  <a href="#bom">
+    <img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" alt="Status">
+  </a>
+</div>
 
-  <br><br>
-
+<hr>
 
 ## 🛠️ Bill of Materials (BOM)
 
