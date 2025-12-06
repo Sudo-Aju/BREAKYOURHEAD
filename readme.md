@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BREAKYOURHEAD Pad</title>
+
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 
   <hr>
 
-  <h2 id="bom">🛠️ Bill of Materials (BOM)</h2>
+  <h2 id="bom"> Bill of Materials (BOM)</h2>
 
   <div style="overflow-x: auto;">
     <table border="1" style="border-collapse: collapse; width: 100%;">
