@@ -97,7 +97,7 @@
 
   <br>
 
-  <h2>📷 Gallery</h2>
+  <h2>Gallery</h2>
 
   <div class="gallery" style="text-align: center;">
     <img src="images/img1.png" alt="Image 1 Description" width="45%" style="margin: 5px;">
