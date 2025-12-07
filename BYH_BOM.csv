@@ -1,0 +1,11 @@
+Part Name,Quantity,Specifications,Notes
+Microcontroller,1,Seeed Studio XIAO RP2040,Main logic board
+Display,1,0.91in OLED Module,I2C Interface
+Rotary Encoders,2,EC11 v2,With push-button
+Switches,6,Cherry MX Switch Base v2,Mechanical Keys
+Keycaps,6,DSA 1u v2,Low profile profile
+Inserts,8,M3 Threaded Insert v3,Heat-set for Case
+Screws (Short),4,M3x12 SHCS v1,Socket Head Cap Screw
+Screws (Long),4,M3x16 SHCS v5,Socket Head Cap Screw
+PCB,1,Custom BYH PCB,FR4
+Diodes,6,1N4148,Through-hole
