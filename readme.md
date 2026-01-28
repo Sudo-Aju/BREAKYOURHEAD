@@ -6,11 +6,16 @@
 
 </head>
 <body>
+  
 
   <div class="header-container" style="text-align: center;">
     <h1>BREAKYOURHEAD Pad</h1>
     <p><strong>A custom 6-key macro pad with dual rotary encoders and OLED support.</strong></p>
-    
+
+
+  My macro pad, "BYH," features a compact 2x3 grid layout with 6 linear mechanical switches for silent, rapid inputs, alongside two EC11 rotary encoders topped with heavy aluminum knobs for precise timeline scrubbing and zooming. It also includes a 0.91" OLED display to visualize active layers and tools. Powered by a Seeed XIAO RP2040 microcontroller running QMK firmware, it utilizes a "Layer" system to switch between a default "Rough Cut" mode for navigation and cutting, and a secondary "Color/Audio" mode for grading adjustments. The build rests on a custom-designed PCB using 1N4148 diodes to ensure accurate key registration, housed in a 5-7° tilted, 3D-printed case to maximize ergonomics and streamline my workflow in NLE software like Premiere Pro or DaVinci Resolve.
+<img width="334" height="364" alt="Screenshot 2026-01-28 at 21 55 14" src="https://github.com/user-attachments/assets/6edb049d-d88d-4c68-981c-63194355b98e" />
+
   <a href="#bom" class="status-badge">
       <img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" alt="Status">
     </a>
