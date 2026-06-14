@@ -9,7 +9,7 @@
   
 
   <div class="header-container" style="text-align: center;">
-    <h1>BREAKYOURHEAD Pad</h1>
+    <h1>BYH MacroPad</h1>
     <p><strong>A custom 6-key macro pad with dual rotary encoders and OLED support.</strong></p>
 
 
