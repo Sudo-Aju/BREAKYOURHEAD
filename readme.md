@@ -1,117 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div align="center">
 
-</head>
-<body>
-  
+# BYH MacroPad
 
-  <div class="header-container" style="text-align: center;">
-    <h1>BYH MacroPad</h1>
-    <p><strong>A custom 6-key macro pad with dual rotary encoders and OLED support.</strong></p>
+### A custom 6-key macropad built for professional video editing workflows.
 
+<img src="https://github.com/user-attachments/assets/6edb049d-d88d-4c68-981c-63194355b98e" width="320">
 
-  My macro pad, "BYH," features a compact 2x3 grid layout with 6 linear mechanical switches for silent, rapid inputs, alongside two EC11 rotary encoders topped with heavy aluminum knobs for precise timeline scrubbing and zooming. It also includes a 0.91" OLED display to visualize active layers and tools. Powered by a Seeed XIAO RP2040 microcontroller running QMK firmware, it utilizes a "Layer" system to switch between a default "Rough Cut" mode for navigation and cutting, and a secondary "Color/Audio" mode for grading adjustments. The build rests on a custom-designed PCB using 1N4148 diodes to ensure accurate key registration, housed in a 5-7° tilted, 3D-printed case to maximize ergonomics and streamline my workflow in NLE software like Premiere Pro or DaVinci Resolve.
-<img width="334" height="364" alt="Screenshot 2026-01-28 at 21 55 14" src="https://github.com/user-attachments/assets/6edb049d-d88d-4c68-981c-63194355b98e" />
+<br>
 
-  <a href="#bom" class="status-badge">
-      <img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" alt="Status">
-    </a>
-  </div>
+![Status](https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge)
+![Firmware](https://img.shields.io/badge/Firmware-QMK-blue?style=for-the-badge)
+![MCU](https://img.shields.io/badge/MCU-Seeed_XIAO_RP2040-green?style=for-the-badge)
+![License](https://img.shields.io/badge/Open%20Source-Yes-success?style=for-the-badge)
 
-  <hr>
+</div>
 
-  <h2 id="bom"> Bill of Materials (BOM)</h2>
+---
 
-  <div style="overflow-x: auto;">
-    <table border="1" style="border-collapse: collapse; width: 100%;">
-      <thead>
-        <tr style="background-color: #f6f8fa;">
-          <th align="center" style="padding: 6px;">Part Name</th>
-          <th align="center" style="padding: 6px;">Quantity</th>
-          <th align="center" style="padding: 6px;">Specifications</th>
-          <th align="center" style="padding: 6px;">Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Microcontroller</strong></td>
-          <td align="center" style="padding: 6px;">1</td>
-          <td align="left" style="padding: 6px;">Seeed Studio XIAO RP2040</td>
-          <td align="left" style="padding: 6px;">Main logic board</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Display</strong></td>
-          <td align="center" style="padding: 6px;">1</td>
-          <td align="left" style="padding: 6px;">0.91in OLED Module</td>
-          <td align="left" style="padding: 6px;">I2C Interface</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Rotary Encoders</strong></td>
-          <td align="center" style="padding: 6px;">2</td>
-          <td align="left" style="padding: 6px;">EC11 v2</td>
-          <td align="left" style="padding: 6px;">With push-button</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Switches</strong></td>
-          <td align="center" style="padding: 6px;">6</td>
-          <td align="left" style="padding: 6px;">Cherry MX Switch Base v2</td>
-          <td align="left" style="padding: 6px;">Mechanical Keys</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Keycaps</strong></td>
-          <td align="center" style="padding: 6px;">6</td>
-          <td align="left" style="padding: 6px;">DSA 1u v2</td>
-          <td align="left" style="padding: 6px;">Low profile profile</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Inserts</strong></td>
-          <td align="center" style="padding: 6px;">5</td>
-          <td align="left" style="padding: 6px;">M3 Threaded Insert v3</td>
-          <td align="left" style="padding: 6px;">Heat-set for Case</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Screws (Short)</strong></td>
-          <td align="center" style="padding: 6px;">2</td>
-          <td align="left" style="padding: 6px;">M3x12 SHCS v1</td>
-          <td align="left" style="padding: 6px;">Socket Head Cap Screw</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Screws (Long)</strong></td>
-          <td align="center" style="padding: 6px;">3</td>
-          <td align="left" style="padding: 6px;">M3x16 SHCS v5</td>
-          <td align="left" style="padding: 6px;">Socket Head Cap Screw</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>PCB</strong></td>
-          <td align="center" style="padding: 6px;">1</td>
-          <td align="left" style="padding: 6px;">Custom BYH PCB</td>
-          <td align="left" style="padding: 6px;">FR4</td>
-        </tr>
-        <tr>
-          <td align="left" style="padding: 6px;"><strong>Diodes</strong></td>
-          <td align="center" style="padding: 6px;">6</td>
-          <td align="left" style="padding: 6px;">1N4148</td>
-          <td align="left" style="padding: 6px;">Through-hole</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+# Overview
 
-  <br>
+BYH is a compact **6-key mechanical macropad** designed specifically for video editors using applications like **Adobe Premiere Pro** and **DaVinci Resolve**.
 
-  <h2>Gallery</h2>
+Rather than relying on keyboard shortcuts, BYH places the most frequently used editing functions beneath your fingertips while providing two precision rotary encoders for intuitive timeline control.
 
-  <div class="gallery" style="text-align: center;">
-    <img src="images/img1.png" alt="Image 1 Description" width="45%" style="margin: 5px;">
-    <img src="images/img2.png" alt="Image 2 Description" width="45%" style="margin: 5px;">
-    <img src="images/img3.png" alt="Image 3 Description" width="45%" style="margin: 5px;">
-    <img src="images/img4.png" alt="Image 4 Description" width="45%" style="margin: 5px;">
-    <img src="images/img5.png" alt="Image 5 Description" width="45%" style="margin: 5px;">
-    <img src="images/img6.png" alt="Image 6 Description" width="100%" style="margin: 5px;">
-  </div>
+The device runs **QMK Firmware**, allowing every key, encoder, and layer to be fully customizable.
 
-</body>
-</html>
+---
+
+# Features
+
+- 6-key mechanical layout
+- Dual EC11 rotary encoders
+- 0.91" OLED display
+- QMK Firmware
+- Layer switching
+- Custom PCB
+- Silent linear mechanical switches
+- Heavy aluminum encoder knobs
+- Ergonomic 5–7° angled case
+- USB-C connectivity
+
+---
+
+# Hardware
+
+| Component | Specification |
+|-----------|---------------|
+| **Microcontroller** | Seeed Studio XIAO RP2040 |
+| **Keys** | 6 × Cherry MX Mechanical Switches |
+| **Encoders** | 2 × EC11 Rotary Encoders |
+| **Display** | 0.91" OLED (I²C) |
+| **Firmware** | QMK |
+| **PCB** | Custom FR4 PCB |
+| **Case** | 3D Printed |
+| **Connection** | USB-C |
+
+---
+
+# Layers
+
+## Layer 0 — Rough Cut
+
+Primary editing controls.
+
+| Control | Function |
+|---------|----------|
+| Keys | Cut, Ripple Delete, Undo, Redo, Play/Pause, Marker |
+| Left Encoder | Timeline Scrub |
+| Right Encoder | Timeline Zoom |
+
+---
+
+## Layer 1 — Color & Audio
+
+Color grading and audio adjustments.
+
+| Control | Function |
+|---------|----------|
+| Keys | Color Wheels, Curves, Gain, Saturation, Audio Tools |
+| Left Encoder | Parameter Adjustment |
+| Right Encoder | Fine Control |
+
+---
+
+# Bill of Materials
+
+| Part | Qty | Specification |
+|------|----:|---------------|
+| Seeed Studio XIAO RP2040 | 1 | Microcontroller |
+| 0.91" OLED Display | 1 | I²C |
+| EC11 Rotary Encoder | 2 | Push-button |
+| Cherry MX Switch | 6 | Linear |
+| DSA 1u Keycaps | 6 | Low Profile |
+| Custom PCB | 1 | FR4 |
+| 1N4148 Diodes | 6 | Through-hole |
+| M3 Heat-set Inserts | 5 | Brass |
+| M3×12 SHCS Screws | 2 | Steel |
+| M3×16 SHCS Screws | 3 | Steel |
+
+---
+
+# Gallery
+
+<p align="center">
+
+<img src="images/img1.png" width="45%">
+<img src="images/img2.png" width="45%">
+
+<img src="images/img3.png" width="45%">
+<img src="images/img4.png" width="45%">
+
+<img src="images/img5.png" width="45%">
+
+<img src="images/img6.png" width="95%">
+
+</p>
+
+---
+
+# Why BYH?
+
+Traditional keyboards force editors to remember dozens of shortcuts.
+
+BYH transforms the most frequently used editing commands into dedicated tactile controls, reducing hand movement while improving speed and workflow efficiency.
+
+---
+
+# Future Improvements
+
+- RGB lighting
+- Wireless mode
+- VIA compatibility
+- Multiple OLED pages
+- Application auto-detection
+- Additional editing profiles
+
+---
+
+<div align="center">
+
+### Designed for creators who spend more time editing than searching for shortcuts.
+
+</div>
